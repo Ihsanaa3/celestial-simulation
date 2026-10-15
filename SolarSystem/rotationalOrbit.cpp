@@ -3,7 +3,6 @@
 #include"OrbitTrail.h" 
 #include"meshDrawTools.h"
 
-
 const unsigned int width = 1920;
 const unsigned int height = 1080; 
 
@@ -32,7 +31,7 @@ int main(){
 
     Shader defaultShader("C:/OGL/res/vertex/udef.vert.txt", "C:/OGL/res/fragment/default.frag.txt"); 
     
-    Mesh grid = drt::createAxis(glm::vec3(0.0, 0.5, 1.0), glm::vec3(0.0, 1.0, 0.5), 25); 
+    Mesh grid = drt::createAxis(25.0f, glm::vec3(0.0, 0.5, 1.0), glm::vec3(0.0, 1.0, 0.5)); 
 
     Shader trailShader("C:/OGL/res/vertex/udef.vert.txt", "C:/OGL/res/fragment/trail.frag.txt"); 
 

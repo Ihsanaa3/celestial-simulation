@@ -153,9 +153,8 @@ int main(){
             prevTime = crntTime; 
         }
 
-		camera.updateMatrix(45.0f, 0.1f, 100.0f); 
-
-        camera.Inputs(window);     
+        camera.Inputs(window);    
+		camera.updateMatrix(45.0f, 0.1f, 100.0f);  
 
         defaultShader.Activate(); 
 

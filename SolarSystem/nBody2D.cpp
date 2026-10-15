@@ -7,7 +7,7 @@
 const unsigned int width = 900;
 const unsigned int height = 900; 
 
-const glm::mat4 iden4 = glm::mat4(1.0f); 
+const glm::mat4 iden4 = glm::mat4(1.0f);  
 const float G = 1e-2; 
 const float radius = 0.05f; 
 const int resolution = 18; 
@@ -39,7 +39,7 @@ int main(){
     Shader ballShader(rrp::getVertexPath() + "modelmat.vert.txt", rrp::getFragmentPath() + "default.frag.txt"); 
     
     std::vector<Ball> AllOfMyBalls;  
-    AllOfMyBalls.reserve(noObjects); 
+    AllOfMyBalls.reserve(noObjects);  
 
     float randradius = 0.9f;// * rd::randf(); 
     
